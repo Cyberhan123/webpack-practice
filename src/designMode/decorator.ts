@@ -3,7 +3,7 @@
  * 只有一个基类就没必要在建立一个decorator类
  * */
 abstract class Component {
-    abstract Operation()
+  abstract Operation()
 }
 
 // 定义一个对象，添加具体职责
@@ -14,29 +14,29 @@ class ConcreteComponent extends Component {
 }
 
 // 装饰器模式核心
-abstract class Decorator extends Component{
-	component = null;
-	setComponent(com: Component){
-	    this.component = com;
-	}
+abstract class Decorator extends Component {
+  component = null;
+  setComponent(com: Component) {
+    this.component = com;
+  }
 }
 
-class ConcreteDecoratorA extends Decorator{
-  Operation(){
+class ConcreteDecoratorA extends Decorator {
+  Operation() {
     this.component.Operation();
     console.log('装饰a');
   }
 }
 
-class ConcreteDecoratorB extends Decorator{
-  Operation(){
+class ConcreteDecoratorB extends Decorator {
+  Operation() {
     this.component.Operation();
     console.log('装饰b');
   }
 }
 
 
-function eventHandle(){
+function eventHandle() {
   return function name(target, propertyKey: string, descriptor: PropertyDescriptor) {
     console.log(target);
     console.log(propertyKey);

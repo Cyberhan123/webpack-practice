@@ -23,9 +23,8 @@ module.exports = {
 		"@typescript-eslint/no-explicit-any": ["off"],
 		"@typescript-eslint/no-empty-function": ["off"],
 		"@typescript-eslint/explicit-module-boundary-types": ["off"],
-		"no-mixed-spaces-and-tabs": ["off"],
 		'@typescript-eslint/indent': 0,
-		'no-mixed-spaces-and-tabs':0,
+		 'no-mixed-spaces-and-tabs': ["error", "smart-tabs"],
 		'indent': [
 			'error',
 			2

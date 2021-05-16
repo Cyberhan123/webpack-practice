@@ -1,5 +1,5 @@
 import 'reflect-metadata';
-import {container} from 'tsyringe';
+import { container } from 'tsyringe';
 import { Foo } from './foo';
 
 const ins = container.resolve(Foo);
